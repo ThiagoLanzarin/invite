@@ -184,8 +184,49 @@ export default function WeddingInvitation() {
       <RsvpSection />
 
       {/* Information Section */}
-      <section id="info" className="bg-secondary py-20 px-4">
-        <div className="max-w-4xl mx-auto">
+      <section id="info" className="bg-secondary py-20 px-4 relative overflow-hidden">
+        {/* Flores decorativas da seção Informações - Esquerda */}
+        <div className="absolute top-10 left-0 md:left-10 opacity-10 pointer-events-none">
+           <svg width="150" height="200" viewBox="0 0 150 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M75 180 Q 75 140, 65 100 Q 60 80, 55 60 Q 50 40, 48 20"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-primary"
+              fill="none"
+            />
+            <path
+              d="M48 20 Q 30 25, 25 45 Q 22 65, 40 75 Q 55 82, 65 70 Q 70 60, 65 45 Q 62 30, 48 20"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-primary"
+              fill="none"
+            />
+          </svg>
+        </div>
+
+        {/* Flores decorativas da seção Informações - Direita */}
+        <div className="absolute bottom-10 right-0 md:right-10 opacity-10 pointer-events-none">
+           {/* CORRIGIDO: Removida a rotação para ficar de pé */}
+           <svg width="150" height="200" viewBox="0 0 150 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M75 180 Q 75 140, 85 100 Q 90 80, 95 60 Q 100 40, 102 20"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-primary"
+              fill="none"
+            />
+            <path
+              d="M102 20 Q 120 25, 125 45 Q 128 65, 110 75 Q 95 82, 85 70 Q 80 60, 85 45 Q 88 30, 102 20"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-primary"
+              fill="none"
+            />
+          </svg>
+        </div>
+
+        <div className="max-w-4xl mx-auto relative z-10">
           <h2 className="text-4xl md:text-5xl font-serif text-center text-foreground mb-16">Informações</h2>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -250,8 +291,48 @@ export default function WeddingInvitation() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-primary text-primary-foreground py-12 px-4">
-        <div className="max-w-4xl mx-auto text-center space-y-4">
+      <footer className="bg-primary text-primary-foreground py-12 px-4 relative overflow-hidden">
+        {/* Flores decorativas - Canto Inferior Esquerdo (Brotando para cima) */}
+        <div className="absolute bottom-0 left-0 opacity-10 pointer-events-none w-24 md:w-32">
+          <svg viewBox="0 0 150 200" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+            <path
+              d="M75 180 Q 75 140, 65 100 Q 60 80, 55 60 Q 50 40, 48 20"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-primary-foreground"
+              fill="none"
+            />
+            <path
+              d="M48 20 Q 30 25, 25 45 Q 22 65, 40 75 Q 55 82, 65 70 Q 70 60, 65 45 Q 62 30, 48 20"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-primary-foreground"
+              fill="none"
+            />
+          </svg>
+        </div>
+
+        {/* Flores decorativas - Canto Inferior Direito (CORRIGIDO: Agora brotando para cima) */}
+        <div className="absolute bottom-0 right-0 opacity-10 pointer-events-none w-24 md:w-32">
+          <svg viewBox="0 0 150 200" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+            <path
+              d="M75 180 Q 75 140, 85 100 Q 90 80, 95 60 Q 100 40, 102 20"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-primary-foreground"
+              fill="none"
+            />
+            <path
+              d="M102 20 Q 120 25, 125 45 Q 128 65, 110 75 Q 95 82, 85 70 Q 80 60, 85 45 Q 88 30, 102 20"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-primary-foreground"
+              fill="none"
+            />
+          </svg>
+        </div>
+
+        <div className="max-w-4xl mx-auto text-center space-y-4 relative z-10">
           <p className="text-2xl md:text-3xl font-serif">Com amor, Thiago & Ana ❤️</p>
           <p className="text-sm text-primary-foreground/70">Feito com carinho para nossos convidados</p>
         </div>

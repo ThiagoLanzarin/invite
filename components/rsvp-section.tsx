@@ -47,8 +47,76 @@ export function RsvpSection() {
   }
 
   return (
-    <section id="rsvp" className="bg-primary text-primary-foreground py-20 px-4">
-      <div className="max-w-3xl mx-auto text-center">
+    <section id="rsvp" className="bg-primary text-primary-foreground py-20 px-4 relative overflow-hidden">
+      {/* Flores decorativas - Canto Inferior Esquerdo (Brotando para cima) */}
+      <div className="absolute bottom-0 left-0 opacity-10 pointer-events-none w-32 md:w-48">
+         <svg viewBox="0 0 150 200" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+            <path
+              d="M75 180 Q 75 140, 65 100 Q 60 80, 55 60 Q 50 40, 48 20"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-primary-foreground"
+              fill="none"
+            />
+            <path
+              d="M48 20 Q 30 25, 25 45 Q 22 65, 40 75 Q 55 82, 65 70 Q 70 60, 65 45 Q 62 30, 48 20"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-primary-foreground"
+              fill="none"
+            />
+             <path
+              d="M95 190 Q 95 150, 92 110 Q 90 90, 88 70"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-primary-foreground"
+              fill="none"
+            />
+            <path
+              d="M88 70 Q 75 65, 75 50 Q 75 35, 88 30 M88 70 Q 95 65, 100 50 Q 102 35, 95 30 M88 70 Q 88 55, 95 45"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-primary-foreground"
+              fill="none"
+            />
+          </svg>
+      </div>
+
+      {/* Flores decorativas - Canto Inferior Direito (Brotando para cima) */}
+      <div className="absolute bottom-0 right-0 opacity-10 pointer-events-none w-32 md:w-48">
+         <svg viewBox="0 0 150 200" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+            <path
+              d="M75 180 Q 75 140, 85 100 Q 90 80, 95 60 Q 100 40, 102 20"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-primary-foreground"
+              fill="none"
+            />
+            <path
+              d="M102 20 Q 120 25, 125 45 Q 128 65, 110 75 Q 95 82, 85 70 Q 80 60, 85 45 Q 88 30, 102 20"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-primary-foreground"
+              fill="none"
+            />
+             <path
+              d="M55 190 Q 55 150, 58 110 Q 60 90, 62 70"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-primary-foreground"
+              fill="none"
+            />
+            <path
+              d="M62 70 Q 75 65, 75 50 Q 75 35, 62 30 M62 70 Q 55 65, 50 50 Q 48 35, 55 30 M62 70 Q 62 55, 55 45"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-primary-foreground"
+              fill="none"
+            />
+          </svg>
+      </div>
+
+      <div className="max-w-3xl mx-auto text-center relative z-10">
         {status === "pending" ? (
           <div className="space-y-8 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-serif text-balance">
@@ -103,7 +171,6 @@ export function RsvpSection() {
                 <Label className="text-primary-foreground text-base">Confirmação de Comparecimento *</Label>
                 <RadioGroup name="attending" required className="space-y-3">
                   <div className="flex items-center space-x-3 bg-primary-foreground/10 p-4 rounded-lg">
-                    {/* CORREÇÃO APLICADA AQUI: Adicionado text-primary-foreground e [&_svg]:fill-current */}
                     <RadioGroupItem 
                       value="sim" 
                       id="sim" 
@@ -114,7 +181,6 @@ export function RsvpSection() {
                     </Label>
                   </div>
                   <div className="flex items-center space-x-3 bg-primary-foreground/10 p-4 rounded-lg">
-                    {/* CORREÇÃO APLICADA AQUI: Adicionado text-primary-foreground e [&_svg]:fill-current */}
                     <RadioGroupItem 
                       value="nao" 
                       id="nao" 

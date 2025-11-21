@@ -8,7 +8,9 @@ export function PhotoGallery() {
 
   const photos = [
     "/JantaFundue.JPG",
-    "/PraiaBella.JPG",
+    // Adicionando as duas novas fotos aqui
+    "/2026395A-34B6-41E5-9B67-B2F3A3EDB6EB.jpg",
+    "/B554A1E5-B236-4DFA-92D0-3C8CF4E2EC11.jpg",
     "/NeveGramado.JPG",
     "/Praiabeijo.JPG",
     "/Janta.JPG",
