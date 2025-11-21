@@ -239,7 +239,7 @@ export default function WeddingInvitation() {
                   <p className="text-card-foreground/80 leading-relaxed">
                     16 de Janeiro de 2026
                     <br />
-                    às 19:00
+                    Jantar às 19:00 horas
                   </p>
                 </div>
               </div>
